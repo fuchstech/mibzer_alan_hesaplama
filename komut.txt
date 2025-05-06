@@ -1,0 +1,5 @@
+sudo apt install gpsd
+sudo systemctl stop gpsd
+sudo systemctl stop gpsd.socket 
+sudo apt install gpsd-clients
+gpsd -N udp://192.168.4.57:9988
